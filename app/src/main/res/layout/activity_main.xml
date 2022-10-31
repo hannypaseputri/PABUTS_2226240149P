@@ -36,7 +36,7 @@
         android:layout_below="@id/et_nama"/>
 
     <Spinner
-        android:id="@+id/sp_jalur_p"
+        android:id="@+id/sp_jalur"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_nopendaftaran"

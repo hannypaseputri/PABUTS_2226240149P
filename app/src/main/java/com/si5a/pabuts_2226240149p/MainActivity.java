@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         etNamaL = findViewById(R.id.et_nama);
         etNoPen = findViewById(R.id.et_nopendaftaran);
         btnRegis = findViewById(R.id.btn_regis);
-        spJalurP = findViewById(R.id.sp_jalur_p);
+        spJalurP = findViewById(R.id.sp_jalur);
         cbKonfirmasi = findViewById(R.id.cb_konfir);
 
         btnRegis.setOnClickListener(new View.OnClickListener() {
@@ -44,12 +44,12 @@ public class MainActivity extends AppCompatActivity {
                     etNoPen.setError("Harap masukkan nomor pendaftaran!");
                 }
 
-                else if(cbKonfirmasi.isChecked() == false){
-                    Toast.makeText(MainActivity.this, "Harap centang!", Toast.LENGTH_SHORT).show();
-                }
-
                 else if(jalur.trim().equals("Jalur Pendaftaran")){
                     Toast.makeText(MainActivity.this, "Pilih jalur terlebih dahulu!", Toast.LENGTH_SHORT).show();
+                }
+
+                else if(cbKonfirmasi.isChecked() == false){
+                    Toast.makeText(MainActivity.this, "Harap centang!", Toast.LENGTH_SHORT).show();
                 }
 
                 else{
